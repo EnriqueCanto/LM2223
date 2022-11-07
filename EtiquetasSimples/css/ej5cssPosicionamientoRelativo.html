@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de caja</title>
+    <style>
+        #caja{
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            color:black;
+            border: 10px dashed black;
+            padding: 50px;
+            /* POSICIONAMIENTO RELATIVO */
+            position:relative;
+            top:200px;
+            left:600px;
+        }
+        #caja2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color:white;
+            border: 20px dotted green;
+            padding: 30px;
+        }
+        #caja3{
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+            color:green;
+            border: 10px solid blue;
+            padding: 30px;
+            position:relative;
+            bottom:-100px;
+            right:-50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>POSICIONAMIENTO RELATIVO</h1>
+    <div id="caja">Texto</div><div id="caja2">Texto</div><div id="caja3">Texto</div>
+</body>
+</html>
