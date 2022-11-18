@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <style>
+        .wrapper {overflow: auto;} /*CONTENEDOR */
+        
+        #leftsidebar {
+          float: none;
+          width: auto;
+        }
+        
+        #menulist {
+          margin: auto;
+          padding: 0;
+        }
+        
+        .menuitem { /*ESTILO DEL MENÚ */
+          background:green;
+          color:yellow;
+          border: 5px dashed black;
+          border-radius: 5px;
+          list-style-type: none;
+          margin: 4px;
+          padding: 2px;
+          text-align: center;
+        }
+        
+        @media screen and (min-width: 480px) {
+          #leftsidebar {width: 200px; float: right;}
+          #main {margin-left: 220px;}
+        }
+        @media print {body{ /*ESTILO A LA HORA DE IMPRIMIR */
+            background-color: white;
+            font-family:'Times New Roman', Times, serif;
+            }
+            #leftsidebar{display: none;} /* NO APARECE EL MENÚ A LA HORA DE IMPRIMIR */
+        }
+        </style>
+        </head>
+        <body style="background-color: pink;">
+        
+        <div class="wrapper">
+          <div id="leftsidebar">
+            <ul id="menulist"> 
+              <li class="menuitem">OPCIÓN 1</li>
+              <li class="menuitem">OPCIÓN 2</li>
+              <li class="menuitem">OPCIÓN 3</li>
+              <li class="menuitem">OPCIÓN 4</li>
+              <li class="menuitem">OPCIÓN 5</li>
+            </ul>
+          </div>
+          
+            <h1>EJEMPLO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum mattis quam a consectetur. Sed pretium consequat nisi congue dapibus. Aliquam nec nisl eu urna malesuada egestas in suscipit leo. Integer quis est interdum neque porttitor pretium tempus sed lectus. Etiam venenatis massa non augue interdum pellentesque. Nunc pretium cursus libero vitae maximus. Pellentesque nec enim mattis, pulvinar mi vitae, tristique nisi. Etiam facilisis dui ac nulla pulvinar luctus.</p>
+
+                <p>Sed augue est, ornare vitae risus ut, tristique posuere risus. Nunc porta sapien quis nulla accumsan varius. Cras ex velit, hendrerit tristique dui vitae, auctor egestas purus. Cras facilisis id nisl at varius. Phasellus quis magna molestie, imperdiet massa eget, lobortis urna. Proin vitae pellentesque nisl. Pellentesque ante risus, tempus id interdum vitae, ullamcorper eu urna. Praesent pharetra eros sed hendrerit consequat. Morbi diam est, varius sagittis odio nec, eleifend convallis ex. Aenean posuere risus eu feugiat tempor. Nam congue, felis eu porta hendrerit, eros leo elementum enim, in porttitor eros nunc ac ligula. Ut id libero at nulla pellentesque convallis a vel nibh. Duis vitae lorem auctor, interdum libero auctor, imperdiet orci.</p>
+                
+                <p>Nam mattis consectetur ipsum non vehicula. Quisque lectus neque, tristique a cursus nec, consequat nec purus. Aenean euismod urna libero, lobortis malesuada justo elementum ut. Integer eget fermentum orci, et rutrum odio. Nunc vitae luctus tortor. Etiam posuere risus fermentum, efficitur diam eget, semper ex. Nunc velit urna, dapibus ac ex a, tempor pretium neque. Integer suscipit quam ligula, at interdum eros viverra nec. Nulla eleifend sem id elit interdum aliquam eu vel risus. Suspendisse mollis nulla interdum, dictum mi at, mattis elit. Proin tortor magna, eleifend et neque et, suscipit convallis mauris. Sed posuere ex eros, ac rhoncus metus mollis ac. Phasellus efficitur ultricies magna in laoreet. Aliquam dolor neque, finibus nec elit feugiat, dignissim consequat nisi. Vestibulum consectetur condimentum justo, id malesuada tortor efficitur at. Morbi molestie nisl eu pellentesque rhoncus.</p>
+
+                <p>Nunc nec malesuada dui. Aenean id ultricies dolor, vitae suscipit diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula nec sem quis luctus. Proin vulputate, dolor in bibendum sagittis, orci ante condimentum quam, ut bibendum eros ex nec urna. Duis ultrices eget urna ac pretium. Etiam iaculis porta lacus vel condimentum. Aenean laoreet placerat nunc, a tempor eros. Quisque ut dictum sem, quis imperdiet neque.</p>
+                
+                <p>Praesent convallis mattis sem facilisis molestie. Aliquam erat volutpat. Sed eget faucibus est. In ac nibh vel mi varius dapibus. Etiam pretium dui ac risus convallis, et pharetra nunc commodo. Aliquam et odio condimentum, faucibus ante a, fermentum augue. Nulla vel faucibus neque, vel placerat erat. Praesent et varius ante. Ut at faucibus augue, non tristique dolor. Donec ac tincidunt mauris. Maecenas ac arcu tristique, laoreet sapien in, mattis sapien. Suspendisse imperdiet lacus finibus, egestas tortor eget, lacinia ligula.</p>
+
+                <p>Curabitur sollicitudin pretium ligula in eleifend. Phasellus lorem urna, condimentum vulputate pretium id, molestie ut odio. Sed dictum, massa a scelerisque pellentesque, nibh tellus ornare elit, ut ullamcorper est diam nec mi. Phasellus laoreet lectus in mollis pretium. Nunc quam quam, facilisis quis convallis quis, mollis laoreet enim. Quisque a erat id mi tincidunt tempor quis in dolor. Nunc cursus pretium libero, sed convallis justo. Donec ultricies aliquet ex, vitae ornare lectus pretium ut. Phasellus lacinia ligula sit amet tortor viverra, at pharetra nibh porta. Sed ultricies arcu augue, luctus malesuada erat scelerisque eget. Proin laoreet et diam sed semper. In tincidunt ligula et magna imperdiet, ut consequat purus sollicitudin. Mauris eu arcu in massa semper ullamcorper. In hendrerit suscipit velit a dictum.</p>
+
+                <p>Vestibulum pulvinar sapien sed eros rutrum congue ut sit amet nulla. Phasellus eu dolor ac leo congue mattis in sit amet magna. Suspendisse potenti. Sed in semper tortor, ut imperdiet purus. Praesent nulla quam, bibendum id consequat quis, bibendum id nisl. Aliquam ultrices magna nec sagittis aliquam. Mauris tristique facilisis augue quis viverra. Fusce vulputate urna lorem, imperdiet lobortis eros imperdiet vel.</p>
+            
+        </div>
+        
+        </body>
+        </html>
+</head>
+<body>
+    
+</body>
+</html>
