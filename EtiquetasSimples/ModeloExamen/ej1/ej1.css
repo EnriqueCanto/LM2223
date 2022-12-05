@@ -1,0 +1,17 @@
+body{
+    background-image: bg.jpg;
+}
+.encabezado{
+    border: 1px solid #4c3803;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #b28306;
+    text-align: center;
+    font-family: 'Trebuchet MS',
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+}

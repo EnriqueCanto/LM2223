@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="ej2.css">
+</head>
+<body style="background-color: lightgrey;">
+    <div class="h1">Crea tu personaje</div>
+    <div class="contenedor">
+    <p><b>Por favor, rellene este formulario:</b></p>
+
+    <label for="nombre"><b>Nombre:</b></label>
+    <div class="respuesta">
+    <input type="text" placeholder="Escribe el nombre de tu personaje"> <br> <br>
+    </div>
+
+    <label for="poderes"><b>¿Tiene poderes especiales?</b></label>
+    <div class="respuesta">
+    <input type="checkbox"> <br> <br>
+    </div>
+
+    <label for="color"><b>Color Favorito</b></label>
+    <div class="respuesta">
+    <input type="color"> <br> <br>
+    </div>
+
+    <label for="descripcion"><b>Descripción Del Mismo</b></label>
+    <div class="respuesta">
+    <textarea name="descripcion" rows="5" cols="30"></textarea> <br> <br>
+    </div>
+
+    <label for="email"><b>Email De Su Tribu</b></label>
+    <div class="respuesta">
+    <input type="email" id="email" name="email"> <br> <br>
+    </div>
+
+    <label for="nacimiento"><b>Nacimiento</b></label>
+    <div class="respuesta">
+    <input type="date"> <br> <br>
+    </div>
+
+    <label for="bando"><b>Bando</b></label>
+    <div class="respuesta">
+    <select id="bando" name="bando">
+        <option value="Buenos">Bando Bueno</option>
+        <option valua="Malos">Bando Malo</option>
+    </select> <br> <br>
+    </div>
+
+    <label for="historia"><b>Historia Del Personaje</b></label>
+    <div class="respuesta">
+    <textarea name="historia" rows="5" cols="30"></textarea> <br> <br>
+    </div>
+
+    <label for="imagen"><b>Imagen Del Personaje</b></label>
+    <div class="respuesta">
+    <input type="file" name="imagen"> <br> <br>
+    </div>
+
+    </div>
+</body>
+</html>
