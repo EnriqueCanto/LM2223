@@ -1,0 +1,38 @@
+body{
+    background-color: #970043;
+}
+p::first-letter{
+    color: white;
+    font-size: 130%;
+}
+.encabezado{
+    background-color:#ffd100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.caja1{
+    float: left;
+    height: 100%;
+}
+.caja2{
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+}
+.caja3{
+    float: right;
+    height: 100%;
+}
+.footer{
+    background-color:#ffd100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
