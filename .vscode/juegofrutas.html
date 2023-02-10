@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina palabra</title>
+</head>
+<body>
+    <h1>ADIVINA LA PALABRA</h1>
+    <p>He pensado en una palabra de la siguientes</p>
+    <input type="text" name="palabras"
+    <button onclick=""comprueba()>Adivina</button>
+    <script>
+        var palabras =["perro","gato","caballo","gallina","libélula"]
+        document.getElementById("texto").innerHTML = palabras;
+        var secreta = palabras [3];
+        function comprueba() (
+            if (document.getElementById("palabra").value==secreta)
+            {
+                alert("¡HAS ACERTADO!")
+            }
+            else{
+                alert("Para la próxima quizás!")
+            }
+        )
+    </script>
+</body>
+</html>

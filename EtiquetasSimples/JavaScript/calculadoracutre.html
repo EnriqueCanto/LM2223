@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Calculadora Cutre</title>
+</head>
+<body>
+    <h1>¡Bienvenido a la calculadora cutre!</h1>
+    <input type="text" name="" id="num1"> <br>
+    <input type="text" name="" id="num2"> <br>
+    <button onclick="sumar()">SUMA!</button>
+    <button onclick="restar()">RESTA!</button>
+    <button onclick="multiplicar()">MULTIPLICA!</button>
+    <button onclick="dividir()">DIVIDE!</button>
+    <p id="solucion"></p>
+    <script>
+        var a;
+        var b;
+        
+        function sumar(){
+            let a= parseFloat(document.getElementById("num1").value);
+            let b= parseFloat(document.getElementById("num2").value);
+            let c= parseFloat(a+b);
+            document.getElementById("solucion").innerHTML=""; 
+            document.getElementById("solucion").innerHTML=c;
+        }
+
+        function restar(){
+            let a= parseFloat(document.getElementById("num1").value);
+            let b= parseFloat(document.getElementById("num2").value);
+            let c= parseFloat(a-b);
+            document.getElementById("solucion").innerHTML="";
+            document.getElementById("solucion").innerHTML=c;
+        }
+
+        function multiplicar(){ 
+            let a= parseFloat(document.getElementById("num1").value);
+            let b= parseFloat(document.getElementById("num2").value);
+            let c= parseFloat(a*b);
+            document.getElementById("solucion").innerHTML=""; 
+            document.getElementById("solucion").innerHTML=c;
+        }
+
+        function dividir(){ 
+            let a= parseFloat(document.getElementById("num1").value);
+            let b= parseFloat (document.getElementById("num2").value);
+            let c= parseFloat(a/b);
+            document.getElementById("solucion").innerHTML ="";
+            document.getElementById("solucion").innerHTML = c;
+        }
+    </script>
+</body>
+</html>
