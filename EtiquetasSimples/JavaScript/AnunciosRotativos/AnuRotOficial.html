@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios Rotatorios</title>
+</head>
+<body>
+    <h1>Anuncios Rotatorios</h1>
+    <a href="https://store.dsautomobiles.es/configurable" id="enlace" target="_blank">
+        <img src="banner0.png" alt="banner0" id="imagen">
+    </a>
+    <a href="https://www.elcorteingles.es/supermercado/" id="enlace" target="_blank">
+        <img src="banner1.png" alt="banner1" id="imagen">
+    </a>
+    <a href="https://www.elcorteingles.es/daitsu/electrodomesticos/aire-acondicionado/" id="enlace" target="_blank">
+        <img src="banner2.png" alt="banner2" id="imagen">
+    </a>
+    <a href="https://www.madridhifi.com" id="enlace" target="_blank">
+        <img src="banner3.png" alt="banner3" id="imagen">
+    </a>
+    <a href="https://launidad.movistarplus.es/?dis_c=331187589&dclid=CL-Lt9zx4_YCFdZEHQkdLpkExQ" id="enlace" target="_blank">
+        <img src="banner4.png" alt="banner4" id="imagen">
+    </a>
+    <a href="https://www.tikamoon.es" id="enlace" target="_blank">
+        <img src="banner5.png" alt="banner5" id="imagen">
+    </a>
+
+    <script>
+    var banner=new Array();
+    var indice=0;
+    banner[0]="banner0.png";
+    banner[1]="banner1.png";
+    banner[2]="banner2.png";
+    banner[3]="banner3.png";
+    banner[4]="banner4.png";
+    banner[5]="banner5.png";
+    function banner(){
+        if (indice=0){
+            indice=indice+1;
+        }
+    } document.getElementById("banner").src = banner[indice];
+    setTimeout (banner, 3000);
+    </script>
+</body>
+</html>

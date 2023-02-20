@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anuncios Rotativos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1>Anuncios Rotatorios</h1>
+          <script>
+            var fotos=new Array();
+            var indice=0; /* Inicializamos el indice del Array */
+            fotos[0]="banner0.jpg";
+            fotos[1]="banner1.jpg";
+            fotos[2]="banner2.jpg";
+            fotos[3]="banner3.jpg";
+            fotos[4]="banner4.jpg";
+            fotos[5]="banner5.jpg";
+            var totalFotos = fotos.length;
+            function atras(){
+                if (indice>0) {
+                    indice=indice-1;
+                }
+                else
+                {
+                    indice = totalFotos-1 ; /* Ponemos el indice en la última */       
+                }
+                document.getElementById("fotoActual").src = "s" + indice + ".jpg"; /* Lo puedo hacer así por el nombre ... */
+            }
+            function siguiente(){
+                if (indice==totalFotos-1){
+                    indice = 0 ; /* Damos la vuelta y comenzamos por la primera */
+                }
+                else
+                {
+                    indice=indice+1;        
+                }
+                document.getElementById("fotoActual").src = fotos[indice]; /* ...o así utilizando el array de fotos */
+            }
+</script>
+        
+</body>
+</html>
