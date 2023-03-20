@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Examen</title>
+</head>
+<body>
+    <h1>Formulario examen</h1>
+    <p id="pnombre">
+    <label for="nombre"><b>Nombre:</b></label>
+    <input type="text" id="nombre" placeholder="Nombre"> 
+    </p>
+    <p id="papellidos">
+    <label for="apellidos"><b>Apellidos:</b></label>
+    <input type="text" id="apellidos" placeholder="Apellidos">
+    <p id="pcorreo">
+    <label for="email"><b>Correo electrónico:</b></label>
+    <input type="email" id="correo" placeholder="Correo Electrónico">
+    </p>
+    <p id="ppin">
+    <label for="pin"><b>PIN:</b></label>
+    <input type="password" id="pin" placeholder="PIN">
+    </p>
+    <p id="prpin">
+    <label for="rpin"><b>Repetir PIN:</b></label>
+    <input type="password" id="rpin" placeholder="Repita PIN">
+    </p>
+    <p id="paceptar">
+    <label for="aceptar"><b>Acepto las condiciones de uso</b></label>
+    <input type="checkbox" id="aceptar">
+    </p>
+    <button onclick="validar()">Validar</button>
+
+<script type="text/javascript">
+    function validar(){
+        
+        let nombre=document.getElementById('nombre').value;
+        let apellidos=document.getElementById('apellidos').value;
+        let correo=document.getElementById('correo').value;
+        let pin=document.getElementById('pin').value;
+        let rpin=document.getElementById('rpin').value;
+        let aceptar=document.getElementById('aceptar').value;
+
+        if(nombre==""){
+                document.getElementById('pnombre').innerHTML='Este campo es obligatorio';
+        }
+        
+        if (apellidos==""){
+                document.getElementById('papellidos').innerHTML='Este campo es obligatorio';
+        }
+
+        if (correo==""){
+                document.getElementById('pcorreo').innerHTML='Este campo es obligatorio';
+        }
+
+        if (pin==""){
+                document.getElementById('ppin').innerHTML='Este campo es obligatorio';
+            }
+            else{
+                if (pin>8){
+                document.getElementById('ppin').innerHTML='Las contraseñas deben tener mínimo 8 dígitos'
+                }
+        
+
+        if (rpin==""){
+                document.getElementById('prpin').innerHTML='Las contraseñas deben tener mínimo 8 dígitos';
+        }
+            else{
+                if (pin>8){
+                    document.getElementById('prpin').innerHTML='Las contraseñas deben tener mínimo 8 dígitos';
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
+

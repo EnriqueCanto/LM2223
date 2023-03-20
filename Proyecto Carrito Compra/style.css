@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    }
+
+body{
+    width: auto;
+    height: auto;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+.encabezado {
+    font-weight: bold;
+    font-size:xx-large;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+.titulo {
+    background-color:white; 
+    font-weight: bold;
+    font-size:xx-large;
+    color: red;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+.descripcion {
+    background-color:white; 
+    font-weight: bold;
+    font-size:medium;
+    color: red;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+.productos1 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.producto1 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 50%;
+}
+.producto2 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 50%;
+}
+.productos2 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.producto3 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 50%;
+}
