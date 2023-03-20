@@ -6,9 +6,9 @@ body{
     width: auto;
     height: auto;
     background-image: url(fondo.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    margin: 0;
+    margin: auto;
     height: 100vh;
 }
 
@@ -22,7 +22,7 @@ body{
     border-radius: 10px;
 }
 .titulo {
-    background-color:white; 
+    background-color:yellow; 
     font-weight: bold;
     font-size:xx-large;
     color: red;
@@ -32,10 +32,10 @@ body{
     border-radius: 10px;
 }
 .descripcion {
-    background-color:white; 
+    background-color:purple; 
     font-weight: bold;
     font-size:medium;
-    color: red;
+    color: white;
     text-align: center;
     padding: 20px;
     border: solid 2px;
@@ -45,6 +45,8 @@ body{
     background-color: black;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .producto1 {
     background-color: white;
@@ -54,7 +56,7 @@ body{
     border: solid 2px;
     border-radius: 10px;
     padding: 20px;
-    flex: 50%;
+    flex: 33%;
 }
 .producto2 {
     background-color: white;
@@ -64,12 +66,7 @@ body{
     border: solid 2px;
     border-radius: 10px;
     padding: 20px;
-    flex: 50%;
-}
-.productos2 {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
+    flex: 33%;
 }
 .producto3 {
     background-color: white;
@@ -79,5 +76,35 @@ body{
     border: solid 2px;
     border-radius: 10px;
     padding: 20px;
-    flex: 50%;
+    flex: 33%;
+}
+.producto4 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 33%;
+}
+.producto5 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 33%;
+}
+.producto6 {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 33%;
 }
